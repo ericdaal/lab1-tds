@@ -1,0 +1,36 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+}
+.botonCalc{
+    width: 100%;
+    height: 80px;
+    font-size: 40px;
+    font-weight: 900;
+    background-color: gray;
+    color: black;
+}
+.botonOp{
+    width: 100%;
+    height: 80px;
+    font-size: 40px;
+    font-weight: 900;
+    color: gray;
+    background-color: black;
+}
+button{
+    margin: 2px;
+}
+#resultado{
+    text-align: right;
+    font-size: 40px;
+    border: 1px solid gray;
+    margin: 20px;
+    padding: 10px;
+}
+#numeroActual{
+    text-align: right;
+    font-size: 40px;
+    border: 1px solid gray;
+}
