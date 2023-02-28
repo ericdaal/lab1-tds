@@ -1,4 +1,4 @@
-const mousetrap = require('mousetrap')
+var Mousetrap = require('mousetrap');
 
 var actualElemento = document.getElementById('numeroActual')
 var resultadoElemento = document.getElementById('resultado')
@@ -18,7 +18,6 @@ var boton6 = document.getElementById('botonSiete').addEventListener('click', cli
 var boton7 = document.getElementById('botonOcho').addEventListener('click', clickOcho)
 var boton8 = document.getElementById('botonNueve').addEventListener('click', clickNueve)
 var boton9 = document.getElementById('botonCero').addEventListener('click', clickCero)
-
 var botonS = document.getElementById('botonSuma').addEventListener('click', clickSuma)
 var botonR = document.getElementById('botonResta').addEventListener('click', clickResta)
 var botonM = document.getElementById('botonMulti').addEventListener('click', clickMulti)
@@ -27,21 +26,20 @@ var botonI = document.getElementById('botonIgual').addEventListener('click', cli
 var botonI = document.getElementById('botonLimpiar').addEventListener('click', clickLimpiar)
 
 
-mousetrap.bind('0',clickCero)
-mousetrap.bind('1',clickUno)
-mousetrap.bind('2',clickDos)
-mousetrap.bind('3',clickTres)
-mousetrap.bind('4',clickCuatro)
-mousetrap.bind('5',clickCinco)
-mousetrap.bind('6',clickSeis)
-mousetrap.bind('7',clickSiete)
-mousetrap.bind('8',clickOcho)
-mousetrap.bind('9',clickNueve)
-mousetrap.bind('+',clickSuma)
-mousetrap.bind('-',clickResta)
-mousetrap.bind('*',clickMulti)
-mousetrap.bind('/',clickDivi)
-
+Mousetrap.bind('0',clickCero)
+Mousetrap.bind('1',clickUno)
+Mousetrap.bind('2',clickDos)
+Mousetrap.bind('3',clickTres)
+Mousetrap.bind('4',clickCuatro)
+Mousetrap.bind('5',clickCinco)
+Mousetrap.bind('6',clickSeis)
+Mousetrap.bind('7',clickSiete)
+Mousetrap.bind('8',clickOcho)
+Mousetrap.bind('9',clickNueve)
+Mousetrap.bind('+',clickSuma)
+Mousetrap.bind('-',clickResta)
+Mousetrap.bind('*',clickMulti)
+Mousetrap.bind('/',clickDivi)
 
 function clickCero() {
     actual += '0'
